@@ -1,0 +1,295 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 720,
+	"height": 540,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onDataChange",
+		"onTimer",
+		"onAfterEdit",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 680,
+					"height": 500,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "TabControl",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Page 1",
+						"Page 2",
+						"Page 3"
+					],
+					"action": "GotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 70,
+					"left": 40,
+					"width": 640,
+					"height": 430,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Var1",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 166,
+					"left": 157,
+					"width": 388,
+					"height": 367,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/option.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button2": {
+					"type": "button",
+					"top": 140,
+					"left": 163,
+					"width": 163,
+					"height": 83,
+					"text": " ",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 150,
+					"left": 168,
+					"width": 56,
+					"height": 62,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/preemptive.png"
+				},
+				"Text": {
+					"type": "text",
+					"top": 165,
+					"left": 238,
+					"width": 88,
+					"height": 33,
+					"text": "Preemptive processes"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 140,
+					"left": 386,
+					"width": 163,
+					"height": 83,
+					"text": " ",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 152,
+					"left": 391,
+					"width": 56,
+					"height": 58,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/cooperative.png"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 165,
+					"left": 461,
+					"width": 88,
+					"height": 33,
+					"text": "Cooperative processes"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 60,
+					"left": 40,
+					"width": 640,
+					"height": 49,
+					"sizingX": "grow",
+					"dataSource": "Var2",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture19": {
+					"type": "picture",
+					"top": 257,
+					"left": 47,
+					"width": 400,
+					"height": 178,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/site_P.png"
+				},
+				"Picture17": {
+					"type": "picture",
+					"top": 320,
+					"left": 280,
+					"width": 400,
+					"height": 177,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/site_C.png"
+				},
+				"Oval": {
+					"type": "oval",
+					"top": 252,
+					"left": 34,
+					"width": 60,
+					"height": 46,
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeWidth": 3
+				},
+				"Oval1": {
+					"type": "oval",
+					"top": 313,
+					"left": 266,
+					"width": 60,
+					"height": 46,
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeWidth": 3
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 60,
+					"left": 40,
+					"width": 640,
+					"height": 113,
+					"sizingX": "grow",
+					"dataSource": "Var3",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture22": {
+					"type": "picture",
+					"top": 186,
+					"left": 40,
+					"width": 400,
+					"height": 313,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/preemp.png"
+				},
+				"Invisible Button1": {
+					"type": "button",
+					"top": 186,
+					"left": 40,
+					"width": 400,
+					"height": 313,
+					"display": false,
+					"method": "ObjectMethods/Invisible Button1.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Picture23": {
+					"type": "picture",
+					"top": 100,
+					"left": 280,
+					"width": 400,
+					"height": 313,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/coop.png"
+				},
+				"Invisible Button": {
+					"type": "button",
+					"top": 100,
+					"left": 280,
+					"width": 400,
+					"height": 313,
+					"display": false,
+					"method": "ObjectMethods/Invisible Button.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				}
+			}
+		},
+		null
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Button2",
+				"Picture3",
+				"Text"
+			],
+			"Group2": [
+				"Button1",
+				"Picture2",
+				"Text1"
+			]
+		}
+	}
+}

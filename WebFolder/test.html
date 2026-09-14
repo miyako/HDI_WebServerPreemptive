@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Country</title>
+
+		<script type="text/javascript">
+			var startTimer = Date.now();
+			var nbRequest = 1;
+		</script>
+	
+		<style> 
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			table, th, td {
+			   	border: 1px solid black;
+			   	padding: 5px;
+			}
+
+			tr:nth-child(even){background-color: #f2f2f2}
+
+			th {
+				color: white;
+				background-color:black;
+				text-align:center;
+			}
+
+			h1 {
+				
+				text-align:center;
+			}
+
+			.topleft {
+			    position: absolute;
+			    left: 10px;
+			    top: 10px;
+			    z-index: -1;
+			}
+
+			.purple {
+				color: purple;
+			}
+		</style> 
+	</head>
+
+	<body>
+
+		<div>
+			<img src="../4daction/WebMethodType" alt="some_text" width="50" class="topleft" onload="loadImage()">
+			<h1>Country</h1>
+		</div>
+
+		<div id="result" class="purple"></div>
+
+		<div id="idTable"></div>
+
+	</body>
+
+
+	<script>
+		var xmlhttp = new XMLHttpRequest();
+		var url = "../4daction/WebMethodArray";
+
+		xmlhttp.onreadystatechange=function() {
+		    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+		        var myArr = JSON.parse(xmlhttp.responseText);
+				loadTable(myArr);
+		    }
+		};
+		xmlhttp.addEventListener("load", loadWebPage);
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+
+		function loadTable(arr) {
+		    var i;
+		    var out = "<table>";
+
+		    out += "<tr><th>Flag</th><th>Country</th><th>Capital</th><th>Population</th><th>Density (P/Km)</th><th>Area (Km)</th><th>Fertility Rate</th><th>Median Age</th><th>Urban Population (%)</th><th>Fake data</th></tr>";
+
+		    for(i = 0; i < arr.length; i++) {
+		        out += "<tr><td>" +
+		        "<img src=\"../4daction/WebMethodImage/Country_flag/"+arr[i].Name+".png\" alt=\"Country flag\" width=\"20\" onload=\"loadImage()\" />"+
+		        "</td><td>" +
+		        arr[i].Name +
+		        "</td><td>" +
+		        arr[i].Capital +
+		         "</td><td>" +
+		        arr[i].Population +
+		        "</td><td>" +
+		        arr[i].Density +
+		        "</td><td>" +
+		        arr[i].Area +
+		        "</td><td>" +
+		        arr[i].FertRate +
+		        "</td><td>" +
+		        arr[i].MedAge +
+		        "</td><td>" +
+		        arr[i].UrbanPop +
+		        "</td><td>" +
+		        "<img src=\"../4daction/WebMethodFakeData/"+arr[i].Name+"\" alt=\"computing data...\" width=\"20\" onload=\"loadImage()\" />"+
+		        "</td></tr>";
+		    }
+		    out += "</table>";
+		    document.getElementById("idTable").innerHTML = out;
+		}
+
+		function loadWebPage(evt) {
+  		    nbRequest= nbRequest + 1;
+  		    document.getElementById("result").innerHTML = nbRequest + " requests in " + (Date.now() - startTimer) + " ms";
+		}
+
+		function loadImage() {
+			nbRequest= nbRequest + 1;
+  		    document.getElementById("result").innerHTML = "<h2>" + nbRequest + " requests in " + (Date.now() - startTimer) + " ms</h1>";
+		}
+
+	</script>
+
+</html>

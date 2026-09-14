@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_WebServerPreemptive" uuid="89D3E6F80FA9EA408A0E251A8569EC50" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Continent" uuid="1CEA4571DFFE427C9FAB059FAED8320F" id="2" prevent_journaling="true">
+		<field name="ID" uuid="FD37D469843E439EA5DB9CDF15FDC0DD" type="4" id="1"/>
+		<field name="Name" uuid="6A883371799F4E2F9CF6E7598C0DBA3D" type="10" id="2"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="SAMPLES" uuid="373049FBC27B4679BB600FC556A05850" id="3">
+		<field name="ID" uuid="A6E58BB01FF1407482262079B5A1922D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Title" uuid="35C07DCBFEBB4747A3C229B95F85D5EE" type="10" never_null="true" id="2"/>
+		<field name="Text" uuid="4C4CE189E738499B84F53F34B61CF199" type="10" never_null="true" id="3"/>
+		<field name="SampleSort" uuid="DF812DB0BB6B4CCB83F420E40DA14116" type="4" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="A6E58BB01FF1407482262079B5A1922D"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="Country" uuid="DB478CB1F9F44AA6B8A3F90149A3ED13" id="4" prevent_journaling="true">
+		<field name="ID" uuid="867E381B195D412EBEB7CFC0495EF86C" type="4" id="1"/>
+		<field name="Name" uuid="AF41AD099571417E98326C9F440DD426" type="10" id="2"/>
+		<field name="Population" uuid="2888D02672534621B8AB4B7A60D32ED3" type="5" id="3"/>
+		<field name="Density" uuid="DBE5E6D4DAA147A9AB685DCC84681D86" type="5" id="4"/>
+		<field name="Area" uuid="0A05811D931E4D8AA90C3C57B887C41A" type="5" id="5"/>
+		<field name="FertRate" uuid="82197713148E4DF7977905AA7E81A8AF" type="6" id="6"/>
+		<field name="MedAge" uuid="BF979956888947E39BB328774510D9EF" type="4" id="7"/>
+		<field name="UrbanPop" uuid="A9D7565D0D4C4078B42655F6D19C4A4D" type="6" id="8"/>
+		<field name="IDContinent" uuid="E6AB3794B8A74E67A4D055CD8BF326C9" type="4" id="9"/>
+		<field name="Capital" uuid="940CC09DE94C4A82BFC619E4CCED12EE" type="10" id="10"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<relation uuid="B4C5E4BEB36F49EDA341C998799CFEDC" name_Nto1="Link_1" name_1toN="Link_1_return" auto_load_1toN="true" state="1">
+		<related_field kind="source">
+			<field_ref uuid="FD37D469843E439EA5DB9CDF15FDC0DD" name="ID">
+				<table_ref uuid="1CEA4571DFFE427C9FAB059FAED8320F" name="Continent"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="E6AB3794B8A74E67A4D055CD8BF326C9" name="IDContinent">
+				<table_ref uuid="DB478CB1F9F44AA6B8A3F90149A3ED13" name="Country"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true"/>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="9F0A7D5AE4AC4E49B1DB241459A71A43" type="7">
+		<field_ref uuid="A6E58BB01FF1407482262079B5A1922D" name="ID">
+			<table_ref uuid="373049FBC27B4679BB600FC556A05850" name="SAMPLES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="DBE8FF2AF86A49A99D3B9C2F7E4E663A" type="7">
+		<field_ref uuid="E6AB3794B8A74E67A4D055CD8BF326C9" name="IDContinent">
+			<table_ref uuid="DB478CB1F9F44AA6B8A3F90149A3ED13" name="Country"/>
+		</field_ref>
+	</index>
+	<base_extra data_file_path=":HowDoI.4DD" package_name="HDI_WebServerPreemptive" structure_file_name="HowDoI" last_opening_mode="1">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

@@ -1,0 +1,61 @@
+{
+	"tables": {
+		"Country": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "269.48046875",
+				"top": "25.5078125",
+				"width": "243.078125",
+				"height": "309.08984375"
+			},
+			"displayable_fields_count": 12,
+			"fields_ordering": 1
+		},
+		"SAMPLES": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "840",
+				"top": "40",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		},
+		"Continent": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "40",
+				"top": "40",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6,
+			"fields_ordering": 1
+		}
+	},
+	"relations": {
+		"B4C5E4BEB36F49EDA341C998799CFEDC": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			}
+		}
+	}
+}

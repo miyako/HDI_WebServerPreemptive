@@ -1,0 +1,13 @@
+//%attributes = {"invisible":true}
+C_REAL:C285(Demo)
+C_BOOLEAN:C305(isPreemptive)
+C_BOOLEAN:C305(isVisible)
+C_TEXT:C284(txtValue)
+C_TEXT:C284(Var1)
+C_TEXT:C284(Var2)
+C_TEXT:C284(Var3)
+C_LONGINT:C283(vFlags)
+C_TEXT:C284(vName)
+C_TEXT:C284(vRecNum)
+C_LONGINT:C283(vState)
+C_LONGINT:C283(vTime)
