@@ -1,6 +1,6 @@
 # HDI_WebServerPreemptive
 
-A 4D v16 **HDI** (How Do I) binary database demonstrating "New commands to save and restore print settings", converted to a 4D project using 4D 21. The codebase was then updated and cleaned up with the help of **GitHub Copilot**.
+A 4D v16 **HDI** (How Do I) binary database demonstrating "Web Server in preemptive mode", converted to a 4D project using 4D 21. The codebase was then updated and cleaned up with the help of **GitHub Copilot**.
 
 ## Origin
 
