@@ -41,9 +41,9 @@
 					"dataSource": "TabControl",
 					"dataSourceTypeHint": "arrayText",
 					"labels": [
-						"Page 1",
-						"Page 2",
-						"Page 3"
+						":xliff:HDI2_TabPage1",
+						":xliff:HDI2_TabPage2",
+						":xliff:HDI2_TabPage3"
 					],
 					"action": "GotoPage",
 					"events": [
@@ -65,6 +65,7 @@
 					"dataSource": "Var1",
 					"focusable": false,
 					"fill": "transparent",
+					"stroke": "automatic",
 					"borderStyle": "none",
 					"enterable": false,
 					"styledText": true,
@@ -116,7 +117,8 @@
 					"left": 238,
 					"width": 88,
 					"height": 33,
-					"text": "Preemptive processes"
+					"stroke": "automatic",
+					"text": ":xliff:HDI2_TxtPreemptive"
 				},
 				"Button1": {
 					"type": "button",
@@ -146,7 +148,8 @@
 					"left": 461,
 					"width": 88,
 					"height": 33,
-					"text": "Cooperative processes"
+					"stroke": "automatic",
+					"text": ":xliff:HDI2_TxtCooperative"
 				},
 				"Variable2": {
 					"type": "input",
@@ -158,6 +161,7 @@
 					"dataSource": "Var2",
 					"focusable": false,
 					"fill": "transparent",
+					"stroke": "automatic",
 					"borderStyle": "none",
 					"enterable": false,
 					"styledText": true,
@@ -193,7 +197,7 @@
 					"width": 60,
 					"height": 46,
 					"fill": "transparent",
-					"stroke": "#9400D3",
+					"class": "hdi-accent",
 					"strokeWidth": 3
 				},
 				"Oval1": {
@@ -203,7 +207,7 @@
 					"width": 60,
 					"height": 46,
 					"fill": "transparent",
-					"stroke": "#9400D3",
+					"class": "hdi-accent",
 					"strokeWidth": 3
 				}
 			}
@@ -220,6 +224,7 @@
 					"dataSource": "Var3",
 					"focusable": false,
 					"fill": "transparent",
+					"stroke": "automatic",
 					"borderStyle": "none",
 					"enterable": false,
 					"styledText": true,

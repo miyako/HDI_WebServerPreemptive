@@ -1,0 +1,26 @@
+/* Cross-platform dark mode rules.
+   Text objects and inputs across the HDI/HDI2 forms use "automatic" /
+   "automaticAlternate" directly in their form JSON (highest specificity in
+   4D, so it must be set there rather than via CSS). The rules below cover
+   the deliberate accent/alert colours that are not meant to become plain
+   "automatic" text, but still need a readable light/dark variant. */
+
+@media (prefers-color-scheme: light) {
+	.hdi-alert {
+		stroke: #FF4D00;
+	}
+
+	.hdi-accent {
+		stroke: #9400D3;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hdi-alert {
+		stroke: #FF6E40;
+	}
+
+	.hdi-accent {
+		stroke: #C77DFF;
+	}
+}

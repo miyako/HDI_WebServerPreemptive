@@ -1,13 +1,8 @@
 //%attributes = {"invisible":true}
-C_REAL:C285(Demo)
-C_BOOLEAN:C305(isPreemptive)
-C_BOOLEAN:C305(isVisible)
-C_TEXT:C284(txtValue)
-C_TEXT:C284(Var1)
-C_TEXT:C284(Var2)
-C_TEXT:C284(Var3)
-C_LONGINT:C283(vFlags)
-C_TEXT:C284(vName)
-C_TEXT:C284(vRecNum)
-C_LONGINT:C283(vState)
-C_LONGINT:C283(vTime)
+  // Demo, Var1, Var2, Var3 are not declared here: they are already the
+  // dataSource of BtnDemo, Variable, Variable2 and Variable1 respectively,
+  // and are auto-typed by their form objects. Declaring them again here
+  // would trigger a "Redefinition of variable" compiler warning.
+var isPreemptive; isVisible : Boolean
+var txtValue; vName; vRecNum : Text
+var vFlags; vState; vTime : Integer

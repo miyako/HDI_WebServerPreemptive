@@ -1,2 +1,3 @@
 //%attributes = {"invisible":true}
-C_BOOLEAN:C305(<>Quit)
+  // <>Quit has been removed: the startup pattern now uses Form.quit
+  // (form-scoped state) instead of an interprocess variable.

@@ -1,7 +1,9 @@
-//%attributes = {}
-C_TEXT:C284($xmlDoc; $xmlElement; txtValue)
+//%attributes = {"invisible":true}
+#DECLARE($value : Text)
 
-txtValue:=$1
+var $xmlDoc; $xmlElement : Text
+
+txtValue:=$value
 
 
 If (WEB Is server running:C1313)

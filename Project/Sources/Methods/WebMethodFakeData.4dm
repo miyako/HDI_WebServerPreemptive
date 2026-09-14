@@ -1,6 +1,5 @@
-//%attributes = {"publishedWeb":true}
-C_TEXT:C284($1)
-
+//%attributes = {"publishedWeb":true,"invisible":true}
+#DECLARE($urlPath : Text)
 
 // Make a loop with many computing operations
 For ($i; 1; 30000)

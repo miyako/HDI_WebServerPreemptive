@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/Forms/HDI2/form.4DForm" source-language="en" target-language="en">
+	<body>
+	  <trans-unit id="HDI2_TabPage1" resname="HDI2_TabPage1">
+		<source>Page 1</source>
+		<target>Page 1</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_TabPage2" resname="HDI2_TabPage2">
+		<source>Page 2</source>
+		<target>Page 2</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_TabPage3" resname="HDI2_TabPage3">
+		<source>Page 3</source>
+		<target>Page 3</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_TxtPreemptive" resname="HDI2_TxtPreemptive">
+		<source>Preemptive processes</source>
+		<target>Preemptive processes</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_TxtCooperative" resname="HDI2_TxtCooperative">
+		<source>Cooperative processes</source>
+		<target>Cooperative processes</target>
+	  </trans-unit>
+	</body>
+  </file>
+</xliff>

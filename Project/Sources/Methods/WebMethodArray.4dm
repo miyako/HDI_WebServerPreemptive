@@ -1,7 +1,8 @@
-//%attributes = {"publishedWeb":true,"preemptive":"capable"}
-C_TEXT:C284($1)
-C_TEXT:C284($jsonString)
-C_BLOB:C604($blob)
+//%attributes = {"publishedWeb":true,"preemptive":"capable","invisible":true}
+#DECLARE($urlPath : Text)
+
+var $jsonString : Text
+var $blob : Blob
 
 ALL RECORDS:C47([Country:4])
 ORDER BY:C49([Country:4]Name:2; >)
