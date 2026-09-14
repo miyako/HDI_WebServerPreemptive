@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/Forms/HDI/form.4DForm" source-language="en" target-language="ja">
+	<body>
+	  <trans-unit id="HDI_BtnDemo" resname="HDI_BtnDemo">
+		<source>Demo</source>
+		<target>デモ</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_Title" resname="HDI_Title">
+		<source>How Do I...</source>
+		<target>使い方...</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_Info" resname="HDI_Info">
+		<source>… use the Web Server in preemptive mode?</source>
+		<target>…プリエンプティブモードでWebサーバを使用するには?</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TxtVersion" resname="HDI_TxtVersion">
+		<source>(4D v16 and above…)</source>
+		<target>(4D v16 以降…)</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TxtSorry1" resname="HDI_TxtSorry1">
+		<source>Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+		<target>このバージョンでこのHDIをデザインモードで開かないでください。機能が不足しているため、フォームやメソッドが変更される可能性があります。</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TxtSorry2" resname="HDI_TxtSorry2">
+		<source>Sorry, this “How do I” (HDI) &#13;example must be used with&#13;a newer version of 4D&#13;(v16 and above).</source>
+		<target>申し訳ございません。この「How do I」(HDI)&#13;サンプルは、4Dの新しいバージョン&#13;(v16以降)&#13;が必要です。</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TxtSorry3" resname="HDI_TxtSorry3">
+		<source>The plugin xxx is mandatory</source>
+		<target>プラグイン xxx が必須です</target>
+	  </trans-unit>
+	</body>
+  </file>
+</xliff>

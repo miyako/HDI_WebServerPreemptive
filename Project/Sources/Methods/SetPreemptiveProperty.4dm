@@ -1,7 +1,9 @@
-//%attributes = {}
-C_TEXT:C284($xmlDoc; $xmlElement; txtValue)
+//%attributes = {"invisible":true}
+#DECLARE($value : Text)
 
-txtValue:=$1
+var $xmlDoc; $xmlElement : Text
+
+txtValue:=$value
 
 
 If (WEB Is server running:C1313)
@@ -10,6 +12,9 @@ If (WEB Is server running:C1313)
 	DELAY PROCESS:C323(Current process:C322; 10)
 End if 
 
+If (Test path name:C476(Get 4D file:C1418(3))#Is a document:K24:1)
+	File:C1566(Get 4D file:C1418(3); fk platform path:K87:2).setText(Folder:C1567(fk resources folder:K87:11).file("settings.4DSettings").getText())
+End if 
 
 $xmlDoc:=DOM Parse XML source:C719(Get 4D file:C1418(3))
 $xmlElement:=DOM Find XML element:C864($xmlDoc; "preferences/com.4d/web/standalone_server/options/web_processes")

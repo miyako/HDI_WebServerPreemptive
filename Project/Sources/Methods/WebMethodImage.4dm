@@ -1,9 +1,9 @@
-//%attributes = {"publishedWeb":true,"preemptive":"capable"}
-C_TEXT:C284($1)
+//%attributes = {"publishedWeb":true,"preemptive":"capable","invisible":true}
+#DECLARE($urlPath : Text)
 
-C_TEXT:C284($filePath; $fileName)
+var $filePath; $fileName : Text
 
-$fileName:=Substring:C12($1; 2)
+$fileName:=Substring:C12($urlPath; 2)
 
 $filename:=Replace string:C233($filename; "/"; Folder separator:K24:12)
 $filename:=Replace string:C233($filename; " "; "_")

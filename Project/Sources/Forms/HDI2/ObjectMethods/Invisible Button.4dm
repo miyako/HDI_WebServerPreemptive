@@ -6,7 +6,7 @@ Case of
 		End if 
 		
 	: (Form event code:C388=On Clicked:K2:4)
-		C_TEXT:C284($filePath)
+		var $filePath : Text
 		
 		$filePath:=Get 4D folder:C485(Current resources folder:K5:16)+"coop.png"
 		

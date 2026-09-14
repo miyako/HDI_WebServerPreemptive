@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?><preferences stamp="3">  <com.4d>    <web>      <standalone_server>        <configuration port_number="80"/>        <options>          <keep_alive requests_number="100"/>          <web_processes preemptive="true"/>        </options>      </standalone_server>    </web>  </com.4d></preferences>

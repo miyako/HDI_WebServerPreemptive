@@ -9,3 +9,35 @@
 	font-weight: bold;
 }
 
+/* Liquid Glass (macOS Tahoe+) push buttons need to be at least 27px tall to
+   receive the rounded/translucent variant; classic macOS uses 23px. Height
+   is defined on both the class-only selector and the compound
+   button.default selector because 4D's CSS engine does not always match
+   the compound selector reliably at runtime.
+
+   Only BtnDemo (HDI form) uses the "default" class: it is the project's
+   sole standard push button. Button1/Button2 and the two "Invisible
+   Button*" objects on the HDI2 form are large custom graphical hotspots
+   sized to overlay specific picture regions (163x83 / 400x313) and are
+   intentionally left out of this sizing rule -- they are not standard
+   push buttons and forcing them to 27px/23px would break their layout. */
+@media (form-theme: liquid-glass) {
+	.default {
+		height: 27px;
+	}
+
+	button.default {
+		height: 27px;
+	}
+}
+
+@media (form-theme: mac-classic) {
+	.default {
+		height: 23px;
+	}
+
+	button.default {
+		height: 23px;
+	}
+}
+
